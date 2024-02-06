@@ -1,0 +1,162 @@
+body {
+    background-color: #b30000;
+}
+
+#container {
+    position: relative;
+    height: 100vh;
+}
+
+#cabecalho-principal {
+    background-color: #ddd;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pontuacao-game {
+    background-color: #61b1ea;
+    border-radius: 30px;
+    padding: 5px 50px;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pontuacao-game img {
+    height: 20px;
+    margin-right: 15px;
+}
+
+#nome-jogo {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+#corpo {
+    display: flex;
+    flex-direction: row;
+    height: 72vh;
+}
+
+#esquerda {
+    margin-left: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#cor-atual {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #000;
+    border-radius: 15px;
+}
+
+#btn-responder {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px 45px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#direita {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#direita img {
+    height: 390px;
+}
+
+#rodape {
+    width: 100%;
+    padding: 2rem;
+    background-color: #1a1a20;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 750px) {
+    #cabecalho-principal {
+        height: auto;
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+    
+    #pontuacao-game {
+        padding: 0.5rem 1rem;
+        margin-left: 0;
+        min-width: 9.75rem;
+    }
+
+    #nome-jogo {
+        font-weight: bolder;
+        font-size: 1.25rem;
+        margin-right: 20px;
+        text-align: center;
+    }
+    
+    #corpo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+        gap: 1rem;
+    }
+
+    #esquerda {
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+
+    #esquerda h3 {
+        margin-bottom: 1rem;
+    }
+    
+    #cor-atual {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #btn-responder {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-top: 1.5rem;
+    }
+
+    #direita img {
+        max-height: 160px;
+    }
+
+    #rodape {
+        padding: 0.5rem;
+    }
+
+    #rodape img {
+        max-height: 3rem;
+    }
+}
